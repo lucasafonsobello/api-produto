@@ -68,11 +68,10 @@ metadata:
 spec:
   selector:
     app: api
-  type: NodePort
+  type: ClusterIP
   ports:
     - name: api-produto-port
       port: 80
       targetPort: 8080   
-      nodePort: 30000     
       protocol: TCP
 
